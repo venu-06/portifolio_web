@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Read your portfolio HTML file
-with open("portfolio.html", "r", encoding="utf-8") as f:
+with open("portifolio.html", "r", encoding="utf-8") as f:
     portfolio_html = f.read()
 
 # Display HTML inside Streamlit
