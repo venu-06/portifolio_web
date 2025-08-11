@@ -4,115 +4,249 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veena Sahithi | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+    </div>
 
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar">
-            <h1 class="logo">Veena Sahithi</h1>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Veena Sahithi</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h2>Hello, I'm <span>Veena Sahithi</span></h2>
-                <p>📊 Aspiring Data Scientist & 💻 Web Developer</p>
-                <a href="#contact" class="btn">Get in Touch</a>
+                <h1>Hello, I'm <span class="gradient-text">Veena Sahithi</span></h1>
+                <div class="hero-subtitle">Data Scientist & Web Developer</div>
+                <div class="hero-description">
+                    Passionate about creating intelligent systems, solving real-world problems, 
+                    and designing elegant web applications that make a difference.
+                </div>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn-primary">Get in Touch</a>
+                    <a href="#projects" class="btn-secondary">View Work</a>
+                </div>
             </div>
             <div class="hero-image">
-                <img src="pic.jpg" alt="Veena Sahithi">
+                <div class="profile-card">
+                    <img src="pic.jpg" alt="Veena Sahithi" class="profile-image">
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="section about">
-        <h2>About Me</h2>
-        <p>
-            I am a Computer Science and Engineering student specializing in Data Science.
-            I’m passionate about creating intelligent systems, solving real-world problems,
-            and designing clean, functional web applications.
-        </p>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Python</div>
-            <div class="skill">Java</div>
-            <div class="skill">Data Science</div>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">
+                    Computer Science Engineering student specializing in Data Science, 
+                    passionate about technology and innovation
+                </p>
+            </div>
+            <div class="about-content fade-in">
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">6+</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">Years Learning</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Passion</div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>
+                        I am a dedicated Computer Science and Engineering student with a specialization in Data Science. 
+                        My journey in technology is driven by curiosity and a desire to create solutions that matter.
+                    </p>
+                    <p>
+                        From developing intelligent systems to crafting beautiful web experiences, I combine technical 
+                        expertise with creative problem-solving to deliver impactful projects. I'm constantly learning 
+                        and exploring new technologies to stay at the forefront of innovation.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
-   <!-- Projects -->
-<section id="projects" class="section projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-        <div class="project-card">
-            <img src="food.jpg" alt="Product List with Cart">
-            <h3>Product List with Cart</h3>
-            <a href="https://github.com/veenasahithi2004/product-list-with-cart" target="_blank" rel="noopener noreferrer">
-                View Project
-            </a>
-            <a href="https://product-list-with-cart-j5v3.vercel.app/" target="_blank" rel="noopener noreferrer">
-    View live demo
-            </a>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">
+                    Technologies and tools I use to bring ideas to life
+                </p>
+            </div>
+            <div class="skills-grid fade-in">
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <div class="skill-name">HTML/CSS</div>
+                    <div class="skill-level">Advanced</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-level">Intermediate</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🐍</div>
+                    <div class="skill-name">Python</div>
+                    <div class="skill-level">Advanced</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">☕</div>
+                    <div class="skill-name">Java</div>
+                    <div class="skill-level">Intermediate</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📊</div>
+                    <div class="skill-name">Data Science</div>
+                    <div class="skill-level">Advanced</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <div class="skill-name">Machine Learning</div>
+                    <div class="skill-level">Intermediate</div>
+                </div>
+            </div>
         </div>
-        <div class="project-card">
-            <img src="policy.jpg" alt="Insurance Assistant App">
-            <h3>Insurance Assistant App</h3>
-            <a href="https://github.com/veenasahithi2004/policypal-ai/tree/main" target="_blank" rel="noopener noreferrer">
-    View Project
-            </a>
-             <a href="https://policypal-ai-j7avdpnfmwpejzrre8var7.streamlit.app/" target="_blank" rel="noopener noreferrer">
-    View live demo
-            </a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">
+                    A showcase of my recent work and creative solutions
+                </p>
+            </div>
+            <div class="projects-grid fade-in">
+                <div class="project-card">
+                    <img src="food.jpg" alt="Product List with Cart" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Product List with Cart</h3>
+                        <p class="project-description">
+                            Interactive e-commerce interface with dynamic cart functionality, 
+                            showcasing modern web development practices and user experience design.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/veenasahithi2004/product-list-with-cart" class="project-link link-primary">GitHub</a>
+                            <a href="https://product-list-with-cart-j5v3.vercel.app/" class="project-link link-secondary">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="policy.jpg" alt="Insurance Assistant App" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">PolicyPal AI</h3>
+                        <p class="project-description">
+                            AI-powered insurance assistant application built with Streamlit, 
+                            helping users understand and navigate insurance policies efficiently.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/veenasahithi2004/policypal-ai/tree/main" class="project-link link-primary">GitHub</a>
+                            <a href="https://policypal-ai-j7avdpnfmwpejzrre8var7.streamlit.app/" class="project-link link-secondary">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="porti_pic.jpg" alt="Portfolio Website" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-description">
+                            Modern, responsive portfolio website showcasing projects and skills 
+                            with clean design and smooth user interactions.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/veenasahithi2004/portifolio_web/tree/main" class="project-link link-primary">GitHub</a>
+                            <a href="https://portifolioapp-two.vercel.app/" class="project-link link-secondary">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="project-card">
-            <img src="porti_pic.jpg" alt="Portfolio Website">
-            <h3>Portfolio Website</h3>
-            <a href="https://github.com/veenasahithi2004/portifolio_web" target="_blank" rel="noopener noreferrer">
-    View Project
-            </a>
-             <a href="https://portifolioapp-two.vercel.app/" target="_blank" rel="noopener noreferrer">
-    View live demo
-            </a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">
+                    Ready to collaborate? Let's discuss your next project or opportunity
+                </p>
+            </div>
+            <div class="contact-content fade-in">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-label">Email</div>
+                        <div class="contact-info">
+                            <a href="mailto:veenasahithi2004@gmail.com">veenasahithi2004@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-label">LinkedIn</div>
+                        <div class="contact-info">
+                            <a href="https://www.linkedin.com/in/mareedu-veena-sahithi-316aa0331/" target="_blank">linkedin.com/in/mareedu-veena-sahithi</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">💻</div>
+                        <div class="contact-label">GitHub</div>
+                        <div class="contact-info">
+                            <a href="https://github.com/veenasahithi2004" target="_blank">github.com/veenasahithi2004</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
-
-
-   <!-- Contact -->
-<section id="contact" class="section contact">
-    <h2>Contact Me</h2>
-    <ul>
-        <li>Email: <a href="mailto:veenasahithi2004@gmail.com">veenasahithi2004@gmail.com</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/mareedu-veena-sahithi-316aa0331/" target="_blank" rel="noopener noreferrer">linkedin.com/in/mareedu-veena-sahithi</a></li>
-        <li>GitHub: <a href="https://github.com/veenasahithi2004" target="_blank" rel="noopener noreferrer">github.com/veenasahithi2004</a></li>
-    </ul>
-</section>
-
+    </section>
 
     <!-- Footer -->
-    <footer>
-        <p>© 2025 Veena Sahithi | Built for CodeSpark Challenge</p>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Veena Sahithi | Crafted with passion for CodeSpark Challenge</p>
+        </div>
     </footer>
 
+    <!-- Scroll-triggered animations -->
+    
+
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <link rel="stylesheet" href="style1.css">
 </body>
 </html>
